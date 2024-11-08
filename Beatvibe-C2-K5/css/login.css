@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'circular_stdmedium';
+    src: url('circular-std-medium-500-webfont.woff2') format('woff2'),
+         url('circular-std-medium-500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'circular_stdblack';
+    src: url('fontsfree-net-circularstd-black-webfont.woff2') format('woff2'),
+         url('fontsfree-net-circularstd-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Mencegah scrollbar horizontal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'circular_stdmedium' ;
+    background-color: #141414;
+    color: #ff66c4;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height:auto;
+}
+
+.daftar-container {
+    width: 400px;
+    height: auto; /* Tambahkan ini untuk memastikan kontainer memiliki tinggi penuh */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    place-content: center end;
+}
+
+.login-container {
+    width: 400px;
+    height: auto; /* Tambahkan ini untuk memastikan kontainer memiliki tinggi penuh */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    place-content: center end;
+    margin-top: 130px;
+}
+
+.login-box {
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 0px 7px #ff66c4;
+    border: 1px solid #ff66c4;
+}
+
+.gambar{
+    width: 100px;
+    height: 100px;
+}
+
+.nama{
+    display: flex;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    color: #ff66c4;
+}
+
+.have-acc p {
+    color: #ff66c4;
+    margin-bottom: 17px;
+}
+
+.login-form {
+    margin-top: 10px;
+    text-align: left;
+    font-family: 'circular_stdmedium' ;
+}
+
+.login-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ff66c4;
+}
+
+.login-form input {
+    font-family: 'circular_stdmedium' ;
+    width: 275px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    color: #ff66c4;
+    border: 2px solid #ff66c4 ;
+    background-color:transparent;
+}
+
+.login-form input:focus {
+    outline: #ff66c4;
+    border: 1px solid #ff66c4;
+    box-shadow: #ff66c4 0px 0px 3px;
+}
+
+.login-form input::placeholder {
+    color: #ff66c4;
+    font-size: 10px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    font-family: 'circular_stdmedium';
+    width: 100px;
+    padding: 10px;
+    background-color: #141414;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #ff66c4;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid #ff66c4;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    color: #ff66c4;
+    border: 1px solid #ff66c4;
+    box-shadow: #ff66c4 0px 0px 5px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.error-input {
+    border-color: red;
+}
+
+
+
+
+
+.profile {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    text-align: left; 
+}
+
+/* Styling untuk label elemen file */
+.login-form label[for="file"] {
+    font-size: 14px;
+    margin-bottom: 9px;
+    display: block;
+    color: #ff66c4; /* Sesuaikan dengan tema gelap */
+}
+
+/* Hide the default file input button */
+input[type="file"] {
+    display: none; /* Sembunyikan input asli */
+}
+
+/* Custom label for the file input */
+.custom-file-label {
+    display: inline-block;
+    font-family: 'circular_stdmedium';
+    width: 150px;
+    height: 40px;
+    padding: 12px;
+    background-color: #141414 ;
+
+    border: none;
+    border-radius: 50px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+    border: #ff66c4 1px solid;
+ 
+}
+
+/* Hover effect for the custom button */
+.custom-file-label:hover {
+    background-color: #ff66c4;
+}
+
+.custom
+
+
+.have-acc p  {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.have-acc a {
+    font-size: 15px;
+    color: #ff66c4;
+}
+
+

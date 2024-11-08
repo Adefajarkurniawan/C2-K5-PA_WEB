@@ -1,0 +1,326 @@
+.container {
+  position: relative;
+  margin: auto;
+  height: 100vh;
+  width: auto;
+  justify-content: center;
+  display: flex;
+}
+nav ul {
+  background-color: #323232;
+}
+nav div {
+  background-color: #323232;
+}
+
+.navbar-section {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #323232;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+
+
+.navbar-shadow {
+  box-shadow: 0 4px 7px rgb(57, 60, 58);
+}
+
+.logo-spotify {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.logo-spotify img {
+  margin-right: 5px;
+  background-color: #323232;
+}
+
+
+.logo-text {
+  font-size: 24px;
+  color: white;
+  background-color: #323232;
+  color: #ff66c4;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin-right: 0px;
+  font-size: 14px;
+}
+.nav-bg {
+  background-color: #323232;
+}
+
+
+.nav-links li {
+  margin-left: 0px;
+  background-color: #323232;
+}
+
+.nav-links a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #ff66c4;
+  background-color: #323232;
+}
+
+.nav-links a:hover {
+  color: #1f1c1c;
+}
+
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.login-button {
+  border: 1px solid #1f1c1c;
+  color: #ff66c4;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  background-color: #1f1c1c;
+  text-decoration: none;
+}
+
+
+.mode-button {
+  border: 2px solid #ccc;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+}
+
+
+
+.login-button:hover {
+  background-color: #141414;
+}
+
+
+.login-button:focus {
+  outline: none;
+  border: #fe32b0;
+  box-shadow: 0 0 0 1px #ff66c4;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  color: white;
+  width: 100%;
+}
+
+
+.hero-text {
+  margin-top: 250px;
+  margin-left: -500px;
+  width: 500px;
+}
+
+.hero-text h1 {
+  padding-top: 0px;
+  margin-top: -10px;
+  padding-left: 0px;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ff66c4;
+  z-index: 9999999999999999999;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ff66c4;
+  z-index: 9999999999999;
+}
+
+.btn-download {
+  background: linear-gradient(90deg, #1E90FF 0%, #ff66c4  100%);
+  color: #141414;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+
+.btn-download:hover {
+  background-color: #191414;
+  border: 2px solid #ffffff;
+}
+
+
+.hero-image {
+  position: absolute; 
+  right: 0; 
+  top: 60%; 
+  left: 63%;
+
+  transform: translate(-50px,-300px);
+}
+
+.hero-image img {
+  margin-top: 200px;
+  margin-right: 40px;
+  width: 660px;
+  height: 500KTpx;
+  
+}
+
+.about-image {
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    margin-left: -300px;
+  }
+  
+  .hero-image img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: left;
+    padding-top: 100px;
+  }
+  
+  .hero-text {
+    margin: 150px auto 50px;
+    width: 90%;
+  }
+  
+  .hero-image {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    display: none;
+  }
+  
+  .hero-image img {
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  .logo-spotify {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-section {
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  .logo-spotify {
+    margin: 10px 0;
+  }
+  
+  .nav-links {
+    margin: 10px;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+  }
+  
+  .login-section {
+    margin: 10px ;
+  }
+  
+  .hero-text {
+    text-align: left;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-image img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+  }
+  
+  .btn-download {
+    padding: 12px 25px;
+  }
+  
+  .login-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  .hero-image img {
+    width: 250px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .logo-text{
+    margin: 10px;
+  }
+  .nav-links li {
+    margin: 5px 0;
+  }
+  
+  .nav-links a {
+    margin-left: 0;
+  }
+}
